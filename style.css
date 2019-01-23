@@ -1,8 +1,7 @@
-html {
+/*html {
 	font-family: Times sans-serif;
 	background-color: aliceblue;
 }
-
 .Table {
 	font-family: Times serif;
 	border-collapse: collapse;
@@ -10,8 +9,121 @@ html {
 	letter-spacing: 1px;
 	text-align: center;
 }
-
 td, th {
 	border: 1px solid;
 	padding: 10px 20px;
+}*/
+/* create a responsive container */
+@media only screen and (min-width: 1200px) {
+	.container { width: 1170px; }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.container { width: 970px; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container { width: 750px; }
+}
+#NavAltMarkup {
+	font-size: 2em;
+}
+
+#bg {
+	align-content: flex-end;
+}
+
+#h1 {
+	font-family: Impact sans-serif;
+	font-size: 6em;
+	align-content: flex-end;
+}
+
+#photo {
+	align-items: stretch;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+#about {
+	align-items: flex-end;
+	margin-left: 500px;
+	margin-right: 50px;
+	border-color: white;
+}
+#para{
+	font-size: large;
+}
+
+#spacer{
+	margin: 100px;
+}
+
+.container {
+	align-items: flex-start;
+	padding: 1em;
+	margin: 1em;
+}
+
+.carousel {
+	width:99%;
+	align-content: center;
+}
+
+.carousel-inner-fluid img {
+	margin: auto;
+	align-content: space-between;
+}
+.carouselSlide {
+	margin: 50em auto;
+	padding: 50em auto;
+}
+
+#captions {
+	font-size: 2em;
+}
+
+#contact {
+	justify-content: center;
+}
+
+.stamp{
+	align-content: center;
+	justify-content: center;
+	font-size: xx-large;
+	height:100px;
+	width:188px;
+	left:200px;
+	top:20px;
+	border-radius:5px;
+	position:relative;
+	background-color:#DC143C;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	animation-delay:2.5s;
+	-webkit-animation-delay:2.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	opacity: 0;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes pulse{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity:.50;
+		transform-origin: 50% 50%;
+		transform: rotate(-2deg) scale(5);
+		transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+	}
+	100%{
+		opacity:1;
+		transform: rotate(-15deg) scale(1);
+	}
+}
+
+
+
