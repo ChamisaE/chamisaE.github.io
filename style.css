@@ -95,7 +95,7 @@ td, th {
 	width:188px;
 	left:200px;
 	top:20px;
-	padding-bottom: 20px;
+	margin: 50px;
 	border-radius:5px;
 	position:relative;
 	background-color:#DC143C;
